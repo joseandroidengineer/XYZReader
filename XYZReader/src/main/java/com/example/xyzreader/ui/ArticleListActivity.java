@@ -58,13 +58,12 @@ public class ArticleListActivity extends ActionBarActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
 
-        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        mToolbar = (Toolbar) findViewById(R.id.detail_toolbar);
         setSupportActionBar(mToolbar);
         Typeface tf = Typeface.createFromAsset(getAssets(),"Rosario-Regular.ttf");
 
         mToolbar.setTitle(getTitle());
 
-        final View toolbarContainerView = findViewById(R.id.toolbar_container);
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 
